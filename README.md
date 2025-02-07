@@ -22,7 +22,7 @@ You can verify the installation by running:
 node -v  
 npm -v
 
-## **2. Install Python and Virtual Environment (for backend)**
+### **2. Install Python and Virtual Environment (for backend)**
 ### Ensure you have Python installed:
 
 python --version
@@ -43,7 +43,16 @@ pip install flask pandas numpy sqlite3
 ### Installing
 
 ## After installing the software,
-#### In one terminal, you need to go to the svelte folder and do:
+#### In one terminal, start the backend, go to python folder and do:
+
+source venv/bin/activate  # On macOS/Linux
+
+\.venv\Scripts\activate     # On Windows
+
+#### Then do:
+python server.py
+
+#### In another terminal you need to go to the svelte folder and do:
 
 npm install 
 
@@ -51,13 +60,15 @@ npm install
 
 npm run dev
 
-#### In another terminal start the backend, go to python folder and do:
+## **Starting**
 
-source venv/bin/activate  # On macOS/Linux
+### To run everything together:
 
-.\.venv\Scripts\activate     # On Windows
+1. Start the Flask backend (server.py).
 
-#### Then do:
-python server.py
+2. Start the frontend (npm run dev).
+
+3. Finally, Open http://localhost:5173/ in your browser.
+
 
 
